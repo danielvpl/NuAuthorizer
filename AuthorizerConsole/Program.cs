@@ -21,12 +21,12 @@ namespace AuthorizerConsole
             var handler = serviceProvider.GetService<IRequestHandler<ExecuteOperationCommand, string>>();
 
             //Debug tests
-            args = new string[1];
-            args[0] = "operations3";
+            //args = new string[1];
+            //args[0] = "operations3";
 
             if (args.Length == 0)
             {
-                Console.WriteLine("Enter the operations file");
+                Console.WriteLine("Enter the operations file. Ex: AuthorizerConsole operations3");
                 return;
             }
 
